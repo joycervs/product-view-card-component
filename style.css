@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grayish-blue);
+}
+
+:root {
+  --dark-cyan: #3c8067;
+  --dark-cyan-deep: #1a4031;
+  --cream: #f2ebe3;
+  --very-dark-blue: #1c232b;
+  --dark-grayish-blue: #6c7289;
+  --white: #ffffff;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  background-color: var(--white);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .img {
+  width: 50%;
+}
+
+.container .img img {
+  width: 100%;
+  display: block;
+}
+
+.container .card {
+  width: 50%;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .card h6 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.container .card h1 {
+  color: var(--very-dark-blue);
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.container .card p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.container .card h2 {
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.container .card h2 span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.container .card a {
+  display: flex;
+  line-height: 48px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  margin-top: 26px;
+  transition-duration: 200ms;
+}
+
+.container .card a:hover {
+  background-color: var(--dark-cyan-deep);
+}
